@@ -1,0 +1,15 @@
+@font-face {
+   font-family: 'Raleway-Thin';
+   font-display: swap;
+   src: url('Raleway-Thin/font.ttf');
+}
+@font-face {
+   font-family: 'Raleway-ExtraLight';
+   font-display: swap;
+   src: url('Raleway-ExtraLight/font.ttf');
+}
+@font-face {
+   font-family: 'Raleway-Regular';
+   font-display: swap;
+   src: url('Raleway-Regular/font.ttf');
+}
