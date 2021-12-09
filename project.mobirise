@@ -57,7 +57,7 @@
       }
     ],
     "imageResize": true,
-    "publishChangesOnly": true,
+    "publishChangesOnly": false,
     "uniqCompNum": 71,
     "versionPublish": "5.5.2",
     "screenshot": "screenshot.png"
@@ -472,7 +472,7 @@
         {
           "_name": "table1",
           "_sourceTheme": "beautyamp",
-          "_customHTML": "<section class=\"table1\" group=\"Tables\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" condition=\"showTitle\">\n        <input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#b69e59\" condition=\"showUnderline && showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline title=\"Table Columns\" name=\"colAmount\" min=\"1\" max=\"15\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Table Rows\" name=\"tableRow\" min=\"1\" max=\"50\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Transparent Table\" name=\"transparentTable\">\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#efefef\" condition=\"transparentTable\">\n        <input type=\"color\" title=\"Header Color\" name=\"headerColor\" value=\"#017fca\" condition=\"!transparentTable\">\n        <input type=\"color\" title=\"Body Color\" name=\"bodyColor\" value=\"#ffffff\" condition=\"!transparentTable\">\n        <input type=\"checkbox\" title=\"Striped Table\" name=\"stripedTable\" condition=\"!transparentTable\" checked>\n        <input type=\"color\" title=\"Body Color 2\" name=\"bodyColor2\" value=\"#017fca\" condition=\"!transparentTable && stripedTable\">\n         \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/beautyamp/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title-wrap align-center\" mbr-if=\"showTitle || showSubtitle\">\n            <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .underline\">\n                Apartamente disponibile la vanzare</h1>\n            <div class=\"underline\" mbr-if=\"showUnderline && showTitle\">\n                <div class=\"line\"></div>\n            </div>\n            <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>DISPONIBILE</b></h2>\n        </div>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12 \">\n                <div class=\"wrapscroll\">\n                    <div class=\"scroll\">\n                        <table class=\"table mbr-text mbr-fonts-style\" cellspacing=\"0\" width=\"100%\">\n                            <thead>\n                                <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\"><b>\n                                            STUDIO</b></p>\n                                    </th>\n                                    \n                                    \n                                <th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\"><b>\n                                            1B</b></p>\n                                    </th><th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\">Vedere pe str. T. Arghezi</p>\n                                    </th></tr>\n                            </thead>\n                            <tbody mbr-list mbr-list-grow=\"tableRow\">\n                                <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>2 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            1C, 1D, 3D</b></p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Vedere pe str. Batistei<br></p>\n                                    </td></tr>\n                            <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            3 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            1E, 2E</b></p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Vedere pe str. Batistei<br></p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            4 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            PENTHOUSE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            SPATIU COMERCIAL</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            365MP</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Cu vitrine pe ambele strazi<br>(Batistei si T.Arghezi)</p>\n                                    </td></tr></tbody>\n                        </table>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"table1\" group=\"Tables\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" condition=\"showTitle\">\n        <input type=\"color\" title=\"Underline Color\" name=\"underlineColor\" value=\"#b69e59\" condition=\"showUnderline && showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"range\" inline title=\"Table Columns\" name=\"colAmount\" min=\"1\" max=\"15\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Table Rows\" name=\"tableRow\" min=\"1\" max=\"50\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Transparent Table\" name=\"transparentTable\">\n        <input type=\"color\" title=\"Border Color\" name=\"borderColor\" value=\"#efefef\" condition=\"transparentTable\">\n        <input type=\"color\" title=\"Header Color\" name=\"headerColor\" value=\"#017fca\" condition=\"!transparentTable\">\n        <input type=\"color\" title=\"Body Color\" name=\"bodyColor\" value=\"#ffffff\" condition=\"!transparentTable\">\n        <input type=\"checkbox\" title=\"Striped Table\" name=\"stripedTable\" condition=\"!transparentTable\" checked>\n        <input type=\"color\" title=\"Body Color 2\" name=\"bodyColor2\" value=\"#017fca\" condition=\"!transparentTable && stripedTable\">\n         \n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"@ADDONS_PATH@/beautyamp/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#dcd0db\" selected>\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"title-wrap align-center\" mbr-if=\"showTitle || showSubtitle\">\n            <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .underline\">\n                Apartamente disponibile la vanzare</h1>\n            <div class=\"underline\" mbr-if=\"showUnderline && showTitle\">\n                <div class=\"line\"></div>\n            </div>\n            <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-light\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>DISPONIBILE</b></h2>\n        </div>\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-12 \">\n                <div class=\"wrapscroll\">\n                    <div class=\"scroll\">\n                        <table class=\"table mbr-text mbr-fonts-style\" cellspacing=\"0\" width=\"100%\">\n                            <thead>\n                                <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\"><b>\n                                            STUDIO</b></p>\n                                    </th>\n                                    \n                                    \n                                <th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\"><b>\n                                            1B</b></p>\n                                    </th><th>\n                                        <p class=\"mbr-text tabletitle mbr-fonts-style align-left\" mbr-theme-style=\"display-7\" data-app-selector=\".tabletitle\">Vedere pe str. T. Arghezi</p>\n                                    </th></tr>\n                            </thead>\n                            <tbody mbr-list mbr-list-grow=\"tableRow\">\n                                <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>2 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            1C, 1D, 3D</b></p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Vedere pe str. Batistei<br></p>\n                                    </td></tr>\n                            <tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            3 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            1E, 2E</b></p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Vedere pe str. Batistei<br></p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            4 CAMERE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            PENTHOUSE</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            N/A</p>\n                                    </td></tr><tr mbr-list mbr-list-grow=\"colAmount\">\n                                    <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\"><b>\n                                            SPATIU COMERCIAL</b></p>\n                                    </td>\n                                    \n                                    \n                                <td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">\n                                            365MP</p>\n                                    </td><td>\n                                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"td > .mbr-text\">Cu vitrine pe ambele strazi<br>(Batistei si T.Arghezi)</p>\n                                    </td></tr></tbody>\n                        </table>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
@@ -567,154 +567,6 @@
           },
           "_cid": "sR0Kb229Sb",
           "_anchor": "table1-1d",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              "& when (@overlay)": {
-                ".mbr-overlay": {
-                  "background": "@overlayColor",
-                  "opacity": "@overlayOpacity"
-                }
-              }
-            },
-            "amp-carousel": {
-              "border-radius": "10px",
-              "box-shadow": "0 15px 30px 0 rgba(0, 0, 0, 0.15)"
-            },
-            ".item, amp-img": {
-              "cursor": "pointer"
-            },
-            ".item-wrapper": {
-              "width": "100%",
-              "position": "relative"
-            },
-            "img": {
-              "border-radius": "10px",
-              "object-fit": "cover"
-            },
-            "amp-img span": {
-              "--space1": "1rem",
-              "--space2": "1rem",
-              "position": "absolute",
-              "left": "var(--space2)",
-              "bottom": "var(--space2)",
-              "padding": "1rem 2rem",
-              "background-color": "@textBg",
-              "color": "contrast(@textBg, #000000, #ffffff, 50%)",
-              "z-index": "11",
-              "border-radius": "3px"
-            },
-            ".mbr-text": {
-              "width": "auto"
-            },
-            ".amp-carousel-button": {
-              "& when not (@enableArrow)": {
-                "display": "none"
-              },
-              "& when (@enableArrow)": {
-                "@fillSVG": "replace(\"@{controlsColor}\", \"#\", \"%23\")",
-                "opacity": "@controlsOpacity !important",
-                "background-color": "@controlsBg",
-                "&.amp-carousel-button-next": {
-                  "background-image": "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='@{fillSVG}'%3E%3Cpath d='M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z'/%3E%3C/svg%3E\")",
-                  "right": "2rem"
-                },
-                "&.amp-carousel-button-prev": {
-                  "background-image": "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='@{fillSVG}'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E\")",
-                  "left": "2rem"
-                },
-                "&:hover": {
-                  "opacity": "1 !important"
-                }
-              }
-            },
-            "@media (max-width: 767px)": {
-              ".amp-carousel-button": {
-                "display": "none"
-              }
-            },
-            ".dots-wrapper": {
-              "display": "none"
-            },
-            "@media (min-width: 992px)": {
-              "& when (@enableBullets)": {
-                ".dots-wrapper": {
-                  "display": "block",
-                  "position": "absolute",
-                  "bottom": "8%",
-                  "left": "50%",
-                  "transform": "translateX(-50%)",
-                  "z-index": "11"
-                },
-                ".dots span": {
-                  "border-color": "@controlsBg",
-                  "background-color": "@controlsColor",
-                  "opacity": "@controlsOpacity"
-                }
-              },
-              "& when (@enablePreview)": {
-                ".preview-wrapper": {
-                  "padding": "0 1rem",
-                  "margin-top": "2rem"
-                },
-                ".img-prw-wrapper": {
-                  "margin-right": "5px",
-                  "flex-basis": "0",
-                  "flex-grow": "1",
-                  "max-width": "15%",
-                  "min-width": "10%",
-                  "max-height": "120px",
-                  "img": {
-                    "border-radius": "3px",
-                    "pointer-events": "none"
-                  },
-                  "amp-img": {
-                    "&:after": {
-                      "content": "\"\"",
-                      "position": "absolute",
-                      "left": "0",
-                      "right": "0",
-                      "top": "0",
-                      "bottom": "0",
-                      "background-color": "white",
-                      "opacity": "0.5",
-                      "z-index": "2",
-                      "transition": "0.4s"
-                    }
-                  },
-                  "amp-img.selected": {
-                    "&:after": {
-                      "opacity": "0"
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-section-title": {
-              "text-align": "left"
-            },
-            ".mbr-section-subtitle": {
-              "text-align": "left"
-            }
-          },
-          "_name": "slider5",
-          "_sourceTheme": "mobirise-amp",
-          "_customHTML": "<section class=\"amp-lightbox-carousel slider5\" group=\"Carousels & Sliders\" plugins=\"amp-main, amp-carousel, amp-lightbox-gallery, amp-bind\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<input type=\"id\" name=\"id\">\n\t\t<header>Size</header>\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" name=\"showText\" title=\"Text\">\n\t\t<input type=\"color\" name=\"textBg\" title=\"Text Bg\" condition=\"showText\" value=\"#005af0\">\n\t\t<header>Controls</header>\n\t\t<input type=\"checkbox\" name=\"enableBullets\" title=\"Bullets\" condition=\"!enablePreview\" checked>\n\t\t<input type=\"checkbox\" name=\"enablePreview\" title=\"Preview\" condition=\"!enableBullets\">\n\t\t<input type=\"checkbox\" name=\"enableArrow\" title=\"Arrows\" checked>\n\t\t<input type=\"checkbox\" name=\"autoplay\" title=\"Autoplay\" checked>\n\t\t<input type=\"range\" name=\"delay\" title=\"Delay\" min=\"1\" max=\"10\" step=\"1\" value=\"8\" condition=\"autoplay\">\n\t\t<input type=\"color\" title=\"Controls\" name=\"controlsColor\" value=\"#174068\">\n\t\t<input type=\"color\" title=\"Controls Bg\" name=\"controlsBg\" value=\"#f9d8f7\">\n\t\t<input type=\"range\" name=\"controlsOpacity\" title=\"Opacity\" min=\"0\" max=\"1\" value=\"0.3\" step=\"0.1\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" required>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#dcd0db\" selected>\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type == 'image'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type == 'image'\">\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\t<amp-state id=\"selected{{id}}\">\n\t\t<script type=\"application/json\">\n\t\t\t\t{\n\t\t\t\t\t\"slide\": 0\n\t\t\t\t}\n\t\t\t</script>\n\t</amp-state>\n\t<div class=\"container\">\n        <div class=\"mbr-pb-4\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-fonts-style mbr-section-title mbr-bold align-center mbr-pb-2\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Parcari</h3>\n            <h4 class=\"mbr-fonts-style mbr-section-subtitle mbr-regular align-center\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\">Fiecarui apartament din cladire ii corspunde cel putin un loc de parcare intr-unul dintre cele doua subsoluri ale imobilului. Intrarea/iesirea se face din strada Tudor Arghezi. Fiecare loc de parcare are preinstalata reteaua pentru incarcare electrica. Rampa de acces are prevazutata instalagie de degivrare.</h4>\n        </div>\n\t\t<amp-carousel id=\"wizard-carousel{{id}}\" width=\"450\" height=\"300\" layout=\"responsive\" type=\"slides\" loop on=\"slideChange:AMP.setState({selected{{id}}: {slide: event.index}})\" data-autoplay=\"{{autoplay}}\" data-delay=\"{{delay*1000}}\">\n\t\t\t<div class=\"item slider-image mbr-flex active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/centralis-subsol-1-1200x675.jpg\" layout=\"responsive\" width=\"533.3333333333333\" height=\"300\" alt=\"image\" class=\"placeholder-loader lb-image\" lightbox=\"true\">\n\t\t\t\t\t\t<span mbr-text class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.</span>\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/centralis-subsol-1-1200x675.jpg\" alt lightbox=\"true\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item slider-image mbr-flex active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/centralis-subsol-2-1200x675.jpg\" layout=\"responsive\" width=\"533.3333333333333\" height=\"300\" alt=\"image\" class=\"placeholder-loader lb-image\" lightbox=\"true\">\n\t\t\t\t\t\t<span mbr-text class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.</span>\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/centralis-subsol-2-1200x675.jpg\" alt lightbox=\"true\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div><div class=\"item slider-image mbr-flex active\">\n\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/centralis-subsol-3-1200x426.jpg\" layout=\"responsive\" width=\"533.3333333333333\" height=\"300\" alt=\"image\" class=\"placeholder-loader lb-image\" lightbox=\"true\">\n\t\t\t\t\t\t<span mbr-text class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit.</span>\n\t\t\t\t\t\t<div placeholder class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/centralis-subsol-3-1200x426.jpg\" alt lightbox=\"true\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t</amp-carousel>\n\t\t<div class=\"dots-wrapper mbr-row\" mbr-if=\"enableBullets\">\n\t\t\t<div class=\"dots\">\n\t\t\t\t<span class=\"dot current\" on=\"tap:wizard-carousel{{id}}.goToSlide(index=0)\" role=\"button\" tabindex=\"0\" data-amp-bind-class=\"selected{{id}}.slide == 0 ? &quot;current&quot; : &quot;&quot;\"></span>\n\t\t\t</div><div class=\"dots\">\n\t\t\t\t<span class=\"dot current\" on=\"tap:wizard-carousel{{id}}.goToSlide(index=1)\" role=\"button\" tabindex=\"0\" data-amp-bind-class=\"selected{{id}}.slide == 1 ? &quot;current&quot; : &quot;&quot;\"></span>\n\t\t\t</div><div class=\"dots\">\n\t\t\t\t<span class=\"dot current\" on=\"tap:wizard-carousel{{id}}.goToSlide(index=2)\" role=\"button\" tabindex=\"0\" data-amp-bind-class=\"selected{{id}}.slide == 2 ? &quot;current&quot; : &quot;&quot;\"></span>\n\t\t\t</div>\n\t\t\t\n\t\t\t\n\t\t</div>\n\t\t<div class=\"preview-wrapper mbr-row mbr-jc-c\" mbr-if=\"enablePreview\">\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t</div>\n\t</div>\n</section>",
-          "_anchor": "slider5-1x",
-          "_isUserblock": true,
-          "_cid": "sR56JIXm1L",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
