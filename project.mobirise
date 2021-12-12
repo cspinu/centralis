@@ -1,6 +1,6 @@
 {
   "settings": {
-    "name": "Site-12-08_1103",
+    "name": "Centralis, apartamente de lux la Universitate",
     "currentPage": "page2.html",
     "theme": {
       "name": "mobirise-amp",
@@ -62,13 +62,15 @@
     "versionPublish": "5.5.2",
     "screenshot": "screenshot.png",
     "favicon": false,
-    "mbrsiteDomain": "xfpjhgqfgi",
-    "robotsSwitcher": false,
-    "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
-    "siteUrl": false,
+    "mbrsiteDomain": "ejwqojzw5j",
+    "robotsSwitcher": true,
+    "sitemapSwitcher": true,
+    "sitemapSwitcherAuto": "on",
+    "siteUrl": "https://centralis.ro",
     "cookiesAlert": false,
-    "gdpr": false
+    "gdpr": false,
+    "canonical-url": "<linkrel=\"canonical\"href=\"https://www.centralis.ro/url/to/full/document.html\">",
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n"
   },
   "pages": {
     "index.html": {
